@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="@color/pink_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seu resultado"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/pink_dark"
+        android:layout_marginBottom="30dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardBackgroundColor="@color/pink_light"
+        app:cardElevation="6dp"
+        android:layout_marginBottom="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/textImcValor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IMC: 0.0"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="@color/pink_dark"/>
+
+            <TextView
+                android:id="@+id/textImcClassificacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Classificação"
+                android:textSize="20sp"
+                android:textColor="@color/text_dark"
+                android:layout_marginTop="12dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular novamente"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:backgroundTint="@color/pink_primary"
+        android:padding="14dp"/>
+
+</LinearLayout>
